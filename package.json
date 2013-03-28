@@ -1,0 +1,25 @@
+{
+  "name": "node-http-stream",
+  "description": "Node.js module for streaming video over HTTP via FFMPEG transcoder",
+  "version": "0.0.1",
+  "homepage": "https://github.com/seannicholls/node-http-stream",
+  "author": {
+    "name": "Sean Nicholls",
+    "email": "seannicholls@gmail.com",
+    "url": "http://seannicholls.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seannicholls/node-http-stream.git"
+  },
+  "bugs": {
+    "url": "https://github.com/seannicholls/node-http-stream/issues"
+  },
+  "main": "lib/index",
+  "engines": {
+    "node": ">= 0.8.1"
+  },
+  "dependencies": {
+    "fluent-ffmpeg": "*"
+  }
+}
