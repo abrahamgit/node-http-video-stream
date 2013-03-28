@@ -3,9 +3,14 @@
 		<title>Video streaming example</title>
 	</head>
 	<body>
-		<video width="640" height="480" autoplay>
-			<source src="/video.web" type="video/webm">
+		<video id="video" width="640" height="480" autoplay controls>
+			<source src="/video.web" type="video/webm" autoplay>
 			<source src="/video.ogg" type="video/ogg">
 		</video>
+		<script>
+			var video = document.getElementById("video");			
+		    video.load();
+		    video.play();
+		</script>
 	</body>
 </html>
