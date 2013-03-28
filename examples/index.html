@@ -1,8 +1,11 @@
 <html>
 	<head>
-		<title>Stream sample</title>
+		<title>Video streaming example</title>
 	</head>
 	<body>
-		<video src="http://localhost:8080/4.ogg" controls autoplay />
+		<video width="640" height="480" autoplay>
+			<source src="/video.web" type="video/webm">
+			<source src="/video.ogg" type="video/ogg">
+		</video>
 	</body>
 </html>
