@@ -15,15 +15,30 @@
 		</style>
 	</head>
 	<body>
-		<video id="video" width="640" height="480" preload="none" autoplay controls>
+		
+		<audio id="audio" preload="none" autoplay>
+			<source src="/audio.mp3" type="audio/mp3">
+		</audio>
+
+		<video id="video" width="640" height="480" preload="none" autoplay>
 			<source src="/video.web" type="video/webm">
 		</video>
+
 		<script>
-			var video = document.getElementById("video");			
+
+			var video = document.getElementById("video");	
+			var audio = document.getElementById("audio");	
+
+		    video.width = window.innerWidth;
+		    video.height = window.innerHeight;	
+
+		    audio.load();
+		    audio.play();	
+
 		    video.load();
 		    video.play();
-		    video.width = window.innerWidth;
-		    video.height = window.innerHeight;
+
+
 		</script>
 	</body>
 </html>
